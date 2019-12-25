@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HREA Form</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background: #d7d7d7;">
+
+    <div class="container my-5">
+        <div class="card p-5">
+
+
+            <div id="form-section">
+
+            <h4 class="mb-2" style="color: #0B4870 !important;">HREA 2020 Registration</h4>
+            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugit facere. Culpa
+                nobis molestias
+                magnam consequuntur laboriosam a natus mollitia! Ducimus omnis, in sint mollitia amet quidem numquam
+                laborum provident? Velit quae itaque quis animi nesciunt dolor, sit autem corrupti quod voluptatibus,
+                non pariatur rerum commodi a iusto enim aliquam?</p>
+            <form id="register-form">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName" class="text-secondary mb-1">First Name</label>
+                            <input name="firstName" type="text" class="form-control" id="firstNAme" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="lastName" class="text-secondary mb-1">Last Name</label>
+                            <input name="lastName" type="text" class="form-control" id="lastName" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="email" class="text-secondary mb-1">Email address</label>
+                            <input type="email" name="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="phoneNumber" class="text-secondary mb-1">Phone Number</label>
+                            <input type="text" name="phoneNumber" class="form-control" id="phoneNumber" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="organization" class="text-secondary mb-1">Organization</label>
+                            <input type="text" name="organization" class="form-control" id="organization" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="designation" class="text-secondary mb-1">Designation/Role</label>
+                            <input type="text" name="designation" class="form-control" id="designation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <button id="register" type="submit" class="btn button-div px-5">Register</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+
+
+            <div id="confirmation" class="d-none">
+                <div class="p-5">
+
+                    <div class="text-center mb-5">
+                        <h6 style="line-height: 1.5;">You are about to pay <span class="text-danger"
+                                style="font-size: 24px;">5000</span c> for HREA 2020 registration. Click continue to finish
+                            registration or cancel to go back</h6>
+                    </div>
+            
+                    <div class="text-center">
+                        <button type="button" class="btn btn-danger mr-3" onclick="cancelPayment()">Cancel</button>
+                        <button type="button" class="btn btn-success" id="register" onclick="makePayment()">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

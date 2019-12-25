@@ -1,0 +1,26 @@
+.form-control {
+    height: 40px;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+#confirmation {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.button-div {
+    border: 2px solid #863E93;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #fff !important;
+}
+
+.button-div:hover {
+    background-color: #863E93;
+    color: #fff !important;
+}
